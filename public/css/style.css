@@ -19,21 +19,19 @@ body {
   
 }
 
-.form-css{
-  text-align: center;
-  color: #fff;
-  background-color: #000;
-}
-
 .logo-img{
     border-radius: 50%;
 }
 
 .form-signin {
   width: 100%;
-  max-width: 330px;
-  padding: 15px;
+  max-width: 450px;
   margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 20px;
+  padding: 2rem;
 }
 
 .form-signin .checkbox {
@@ -67,4 +65,8 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+p{
+  font-weight: bolder;
 }
