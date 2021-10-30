@@ -6,6 +6,8 @@ const https=require("https");
 const app=express();
 app.use(bodyparser.urlencoded({extended:true}));
 
+
+
 app.use(express.static("public"));
 
 app.get("/",(req,res)=>{
@@ -53,7 +55,7 @@ app.post("/",(req,res)=>{
         })
     })
 
-    // request.write(jsonData);
+    request.write(jsonData);
     request.end();
 
 
@@ -64,7 +66,8 @@ app.post("/failure",(req,res)=>{
     res.redirect("/");
 })
 
-app.listen(3000,()=>{
+
+app.listen(process.env.PORT || 3000,()=>{
     console.log("listening to port");
 })
 
